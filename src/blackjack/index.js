@@ -53,7 +53,7 @@ btnPedir.addEventListener('click', () => {
     puntosJugador = puntosJugador + valorCarta( carta );
     puntosHTML[0].innerText = puntosJugador;
     
-    imgCarta = crearCartaHTML(carta);
+    const imgCarta = crearCartaHTML(carta);
     divCartasJugador.append( imgCarta );
 
     if ( puntosJugador > 21 ) {
